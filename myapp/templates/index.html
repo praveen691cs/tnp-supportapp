@@ -1,4 +1,11 @@
 {% extends 'boot.html' %}
 {% block content %}
-<h2>home page</h2>
+<h2>home page
+</h2>
+<br>
+<p><a href="{% url 'link1' %}">Link1</a></p>
+      <p><a href="{% url 'link2' %}">Link2</a></p>
+      <p><a href="{% url 'link3' %}">Link3</a></p>
+      <p><a href="{% url 'link4' %}">Link4</a></p>
+      <p><a href="{% url 'link5' %}">Link5</a></p>
 {% endblock %}
