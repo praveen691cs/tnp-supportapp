@@ -20,7 +20,7 @@ def index(request):
         max = i
         j = i + 1
         while (j < 5):
-            if (count[i] < count[j]):
+            if (count[max] < count[j]):
                 max = j
             j = j + 1
         a = links[max]
@@ -30,6 +30,7 @@ def index(request):
         count[max] = count[i]
         count[i] = a
     print(links)
+    print(count)
     dict={'l':links}
 
 
