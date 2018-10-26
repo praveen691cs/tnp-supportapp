@@ -25,7 +25,7 @@ SECRET_KEY = 'pq%9w3-i0$$q1v00h(*#*&-k9d5u2it&z3&=(su1d1%_h=t8hk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['project-praveen.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['project-praveen.herokuapp.com','localhost']
 
 # Application definition
 

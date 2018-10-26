@@ -8,4 +8,7 @@
       <p><a href="{% url 'link3' %}">Link3</a></p>
       <p><a href="{% url 'link4' %}">Link4</a></p>
       <p><a href="{% url 'link5' %}">Link5</a></p>
+     <p>after rearranging</p>
+{% for key,value in dict.items %}{% for i in value %} <p><a href="{{ i }}"> {{ i }}</a></p> {% endfor %}{% endfor %}
+
 {% endblock %}

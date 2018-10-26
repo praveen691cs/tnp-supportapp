@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "analytics-220517",
+  "private_key_id": "b46dbac8d38a18fcf7077f5b691c9605f7c38064",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7muTVZq6kJygZ\nTeZ+z4LDo6fsLuc1OlcHWqjj0KZrHZpnJSoOucYoPXf1Avl3n9rAcm28U8dHFeOb\nFYuPp6tKy+VFoo8UVlC3ZBGQAGtmh+1V5GykuX38g73il97h/8/F0Phbof6HGJOS\nKD9BjzE/UCcrBWadIZ9MlUMz7pWilqwOctWoRj53VZ9WmvrIhst1uMSbHKkZZxzG\nVg2/hBkTEHYJSSxzF4rzoPhBEHcWMH94mTDaVKi2jAy6XOBBHsG7xugp1uKIRZ7V\nmaqs5olUOCUq7dyIIrSSpEiQl6hLqku8CuBuYkD5k5U2ShST8RjWB5c8aDQbyrtW\n9Etx27NZAgMBAAECggEADhvkTVNLW4+RUbPc25keF7oJYTcWztc8H9K25Gk29tPT\nXqH6I4DfsPuMd7n5SoCUakhAzfrMACHai/mHFS7yMC4c6EuFMK2cJOqq8nZBnYSn\n+f9zl0DXA4Rh5bZvvfXn6ZPhdby9YGoeAQ4zUaoj9UPBKlhd4v/aE9+e3fs5uDA1\nInmsFL5X8EtTEF8DzJd4i61e5u33L3pJfzS8GA2Fo2WOfQawjOeSPc7D8HNwzpsR\nfNFuv47Lm2TzPbwKljs+vGrEuIMTonbR8T90s6+YIZGeDNhgVYyZToig7G4gt2ii\nYjN7LKn3goM5MnRRRQXfjiZkwjlGj/Flwud+vp+NYQKBgQDsQHqIWdytNLckKJYl\nPI+0ZQdJ7a/8BVe4tsvcCbreHLQS+l5YgskdDdc48IjEt9X0RaTmBP9GfmqFOYeJ\nUd/7tCI2knwxLmXyqZq4mbXzT3tgzLH5UlqC5PMUrhg9KUxsSuXVCfmhusSzFq45\n3f0XyL5Egg06+wq0SX9ujORWEQKBgQDLSW2/q343l2XPEOBZsJ70Gg9RZTi63xUl\nAXcJ5WIX3jYqO0B/ym+IlpDmJD6NN0nGdKZToz97enFNZgslV/B2Za5E/uujGreD\nwkbpSiqBam+uhCdwlQE4BXLMfq3Yahc+uMOjILksFQXt0FJIUBCrxygqA4Y2Ih2Z\nn/4HcLIgyQKBgDr40V1NyRb3LKv68Zez6U8nVM1wZlhrYP07q+FuEFY3JgACvSAs\n7VSySsHs0McB+Ic0BzhfkPUgwygkNx/g7x8eVNf4csW4Bjyvd26S9+cXNP3xuo84\nrl00FzVXS7egonH5tCschVKIk2b8x1qsfeu88TmamQDa/04Hdqa6xphxAoGBAIt8\nDrn9SdWLJGg4BDiGYArN9sS613ohp7iEkNFRe0U1S6UektscY/sslK/VHrZ2wUBS\nue2Zje2Dzkp1QiCVfoE+s5zT7Ys0wca+fzmDkjbKeWcddpJhKzztQB/grBhacyiu\nTk6YHXaJ1k+fKVZE2auEM6LgWC68qeLHTN5+DTtBAoGBAN7V1tL3gcuXh8mRE5tV\nwRhnmINHLld9e+fxZ0IYJTKJPC4aSb/cIVyWpAH95H+pI61bLjDak5fqEEUO/oBQ\nfusAtFNiBay4EDCmyzxTlBTikyE/rN7e6LoX0rdv+Mr0oBf2mIQL/ITxosEc4E6C\n337yyw6YaUd5K/ebvnxYHd7I\n-----END PRIVATE KEY-----\n",
+  "client_email": "legislator@analytics-220517.iam.gserviceaccount.com",
+  "client_id": "113608975220870006484",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/legislator%40analytics-220517.iam.gserviceaccount.com"
+}
