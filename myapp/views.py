@@ -44,12 +44,42 @@ def index(request):
 
     return render(request, 'index.html',{'dict':dict})
 def link1(request):
-    return render(request, 'link1.html')
+    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    client = gspread.authorize(creds)
+    sht = client.open('Majorprojectnew').sheet1
+    i=sht.cell(17,2).value
+    dict={'l':i}
+    return render(request, 'link1.html',{'dict':dict})
 def link2(request):
-    return render(request, 'link2.html')
+    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    client = gspread.authorize(creds)
+    sht = client.open('Majorprojectnew').sheet1
+    i=sht.cell(18,2).value
+    dict={'l':i}
+    return render(request, 'link2.html',{'dict':dict})
 def link3(request):
-    return render(request, 'link3.html')
+    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    client = gspread.authorize(creds)
+    sht = client.open('Majorprojectnew').sheet1
+    i=sht.cell(19,2).value
+    dict={'l':i}
+    return render(request, 'link3.html',{'dict':dict})
 def link4(request):
-    return render(request, 'link4.html')
+    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    client = gspread.authorize(creds)
+    sht = client.open('Majorprojectnew').sheet1
+    i=sht.cell(20,2).value
+    dict={'l':i}
+    return render(request, 'link4.html',{'dict':dict})
 def link5(request):
-    return render(request, 'link5.html')
+    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    client = gspread.authorize(creds)
+    sht = client.open('Majorprojectnew').sheet1
+    i=sht.cell(21,2).value
+    dict={'l':i}
+    return render(request, 'link5.html',{'dict':dict})

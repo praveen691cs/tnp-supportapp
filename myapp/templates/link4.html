@@ -1,4 +1,5 @@
 {% extends 'boot.html' %}
 {% block content %}
-<h2>This is link four</h2>
+<h2>Link 4 is accessed {{dict.l}} times</h2>
+<a href="{% url 'index' %}">Back to Index</a>
 {% endblock %}
