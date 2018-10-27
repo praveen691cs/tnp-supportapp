@@ -4,3 +4,4 @@ gspread==3.0.1
 whitenoise==4.0
 psycopg2==2.7.5
 Django==2.1
+oauth2client==4.1.3
