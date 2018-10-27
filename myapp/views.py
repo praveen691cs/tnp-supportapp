@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django. import gspread
+import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Create your views here.
