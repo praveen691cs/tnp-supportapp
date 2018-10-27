@@ -31,7 +31,15 @@ def index(request):
         count[i] = a
     print(links)
     print(count)
-    dict={'l':links}
+    name=[]
+    for i in links:
+        i=i[7:]
+        i=i.title()
+        name.append(i)
+    print(name)
+
+    dict={
+          'n':name}
 
 
     return render(request, 'index.html',{'dict':dict})

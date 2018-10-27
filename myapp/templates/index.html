@@ -3,12 +3,12 @@
 <h2>home page
 </h2>
 <br>
-<p><a href="{% url 'link1' %}">Link1</a></p>
-      <p><a href="{% url 'link2' %}">Link2</a></p>
-      <p><a href="{% url 'link3' %}">Link3</a></p>
-      <p><a href="{% url 'link4' %}">Link4</a></p>
-      <p><a href="{% url 'link5' %}">Link5</a></p>
+<p><a href="{% url 'Link1' %}">Link1</a></p>
+      <p><a href="{% url 'Link2' %}">Link2</a></p>
+      <p><a href="{% url 'Link3' %}">Link3</a></p>
+      <p><a href="{% url 'Link4' %}">Link4</a></p>
+      <p><a href="{% url 'Link5' %}">Link5</a></p>
      <p>after rearranging</p>
-{% for key,value in dict.items %}{% for i in value %} <p><a href="{{ i }}"> {{ i }}</a></p> {% endfor %}{% endfor %}
+{% for key,value in dict.items %}{% for i in value %} <p><a href="{% url  i %}"> {{ i }}</a></p> {% endfor %}{% endfor %}
 
 {% endblock %}
