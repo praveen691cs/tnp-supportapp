@@ -2,4 +2,6 @@
 {% block content %}
 <h1>Link 5 is accessed {{dict.l}} times</h1>
 <a href="{% url 'index' %}">Back to Index</a>
+{% load static %}
+<img src="{% static "/static/baye5.PNG" %}" alt="My image">
 {% endblock %}
