@@ -6,22 +6,24 @@ from oauth2client.service_account import ServiceAccountCredentials
 def index(request):
     return render(request,'index.html')
 def page(request):
+    total = ['Link1','Link2','Link3','Link4','Link5']
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
     creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
     client = gspread.authorize(creds)
     sht = client.open('Majorprojectnew').sheet1
     links = []
     count = []
-    for i in list(range(17, 22)):
+    for i in list(range(16, 25)):
         l = sht.cell(i, 1).value
-        links.append(l)
-        l = int(sht.cell(i, 2).value)
-        count.append(l)
-
-    for i in list(range(0, 4)):
+        if(l[7:11]=='link'):
+            links.append(l)
+            l = int(sht.cell(i, 2).value)
+            count.append(l)
+    b=len(links)
+    for i in list(range(0,b-1)):
         max = i
         j = i + 1
-        while (j < 5):
+        while (j < b):
             if (count[max] < count[j]):
                 max = j
             j = j + 1
@@ -35,10 +37,16 @@ def page(request):
     print(count)
     name=[]
     for i in links:
-        i=i[7:]
-        i=i.title()
-        name.append(i)
+        j=i[7:11]
+        if(j=='link'):
+            i=i[7:]
+            i = i.title()
+            name.append(i)
     print(name)
+    for i in total:
+        if(i not in name):
+            name.append(i)
+
 
     dict={
           'n':name}
@@ -86,22 +94,24 @@ def link5(request):
     dict={'l':i}
     return render(request, 'link5.html',{'dict':dict})
 def average(request):
+    total = ['Link1', 'Link2', 'Link3', 'Link4', 'Link5']
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
     creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
     client = gspread.authorize(creds)
     sht = client.open('Majorprojectnew').sheet1
     links = []
     count = []
-    for i in list(range(17, 22)):
+    for i in list(range(16, 25)):
         l = sht.cell(i, 1).value
-        links.append(l)
-        l = float(sht.cell(i, 3).value)
-        count.append(l)
-
-    for i in list(range(0, 4)):
+        if(l[7:11]=='link'):
+            links.append(l)
+            l = float(sht.cell(i, 3).value)
+            count.append(l)
+    b=len(links)
+    for i in list(range(0, b-1)):
         max = i
         j = i + 1
-        while (j < 5):
+        while (j < b):
             if (count[max] < count[j]):
                 max = j
             j = j + 1
@@ -116,8 +126,12 @@ def average(request):
     name = []
     for i in links:
         i = i[7:]
-        i = i.title()
-        name.append(i)
+        if (i[7:11] == 'link'):
+            i = i.title()
+            name.append(i)
+    for i in total:
+        if(i not in name):
+            name.append(i)
     print(name)
 
     dict = {
@@ -126,24 +140,27 @@ def average(request):
     return render(request, 'averagetime.html', {'dict': dict})
 
 def product(request):
+    total = ['Link1', 'Link2', 'Link3', 'Link4', 'Link5']
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
     creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
     client = gspread.authorize(creds)
     sht = client.open('Majorprojectnew').sheet1
     links = []
     count = []
-    for i in list(range(17, 22)):
+    for i in list(range(16, 25)):
         l = sht.cell(i, 1).value
-        links.append(l)
-        l = float(sht.cell(i, 3).value)
-        m=int(sht.cell(i,2).value)
-        k=l*m
-        count.append(k)
+        if(l[7:11]=='link'):
+            links.append(l)
+            l = int(sht.cell(i, 2).value)
+            m = float(sht.cell(i, 3).value)
+            l=l*m
+            count.append(l)
 
-    for i in list(range(0, 4)):
+    b=len(links)
+    for i in list(range(0, b-1)):
         max = i
         j = i + 1
-        while (j < 5):
+        while (j < b):
             if (count[max] < count[j]):
                 max = j
             j = j + 1
@@ -158,8 +175,13 @@ def product(request):
     name = []
     for i in links:
         i = i[7:]
-        i = i.title()
-        name.append(i)
+        if (i[7:11] == 'link'):
+            i = i.title()
+            name.append(i)
+    for i in total:
+        if(i not in name):
+            name.append(i)
+
     print(name)
 
     dict = {

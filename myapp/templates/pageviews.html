@@ -4,5 +4,6 @@
 
      <h2>After Rearranging according to pageviews</h2>
 {% for key,value in dict.items %}{% for i in value %} <p><a href="{% url  i %}"> {{ i }}</a></p> {% endfor %}{% endfor %}
-
+<br>
+<a href="{% url 'index' %}">Back to Index</a>
 {% endblock %}
