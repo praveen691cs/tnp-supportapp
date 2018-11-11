@@ -8,7 +8,9 @@
       <p><a href="{% url 'Link3' %}">Link3</a></p>
       <p><a href="{% url 'Link4' %}">Link4</a></p>
       <p><a href="{% url 'Link5' %}">Link5</a></p>
-     <h2>After Rearranging</h2>
-{% for key,value in dict.items %}{% for i in value %} <p><a href="{% url  i %}"> {{ i }}</a></p> {% endfor %}{% endfor %}
+      <p><a href="{% url 'page' %}">Pageviews</a></p>
+<p><a href="{% url 'average' %}">Average time</a></p>
+<p><a href="{% url 'product' %}">Product</a></p>
+
 
 {% endblock %}

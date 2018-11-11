@@ -4,6 +4,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 # Create your views here.
 def index(request):
+    return render(request,'index.html')
+def page(request):
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
     creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
     client = gspread.authorize(creds)
@@ -42,7 +44,7 @@ def index(request):
           'n':name}
 
 
-    return render(request, 'index.html',{'dict':dict})
+    return render(request, 'pageviews.html',{'dict':dict})
 def link1(request):
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
     creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
@@ -83,3 +85,84 @@ def link5(request):
     i=sht.cell(21,2).value
     dict={'l':i}
     return render(request, 'link5.html',{'dict':dict})
+def average(request):
+    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    client = gspread.authorize(creds)
+    sht = client.open('Majorprojectnew').sheet1
+    links = []
+    count = []
+    for i in list(range(17, 22)):
+        l = sht.cell(i, 1).value
+        links.append(l)
+        l = float(sht.cell(i, 3).value)
+        count.append(l)
+
+    for i in list(range(0, 4)):
+        max = i
+        j = i + 1
+        while (j < 5):
+            if (count[max] < count[j]):
+                max = j
+            j = j + 1
+        a = links[max]
+        links[max] = links[i]
+        links[i] = a
+        a = count[max]
+        count[max] = count[i]
+        count[i] = a
+    print(links)
+    print(count)
+    name = []
+    for i in links:
+        i = i[7:]
+        i = i.title()
+        name.append(i)
+    print(name)
+
+    dict = {
+        'n': name}
+
+    return render(request, 'averagetime.html', {'dict': dict})
+
+def product(request):
+    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    client = gspread.authorize(creds)
+    sht = client.open('Majorprojectnew').sheet1
+    links = []
+    count = []
+    for i in list(range(17, 22)):
+        l = sht.cell(i, 1).value
+        links.append(l)
+        l = float(sht.cell(i, 3).value)
+        m=int(sht.cell(i,2).value)
+        k=l*m
+        count.append(k)
+
+    for i in list(range(0, 4)):
+        max = i
+        j = i + 1
+        while (j < 5):
+            if (count[max] < count[j]):
+                max = j
+            j = j + 1
+        a = links[max]
+        links[max] = links[i]
+        links[i] = a
+        a = count[max]
+        count[max] = count[i]
+        count[i] = a
+    print(links)
+    print(count)
+    name = []
+    for i in links:
+        i = i[7:]
+        i = i.title()
+        name.append(i)
+    print(name)
+
+    dict = {
+        'n': name}
+
+    return render(request, 'product.html', {'dict': dict})
