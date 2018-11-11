@@ -47,7 +47,7 @@ def page(request):
         if(i not in name):
             name.append(i)
 
-
+    print(name)
     dict={
           'n':name}
 
@@ -125,10 +125,12 @@ def average(request):
     print(count)
     name = []
     for i in links:
-        i = i[7:]
-        if (i[7:11] == 'link'):
+        j = i[7:11]
+        if (j== 'link'):
+            i=i[7: ]
             i = i.title()
             name.append(i)
+    print(name)
     for i in total:
         if(i not in name):
             name.append(i)
@@ -174,10 +176,12 @@ def product(request):
     print(count)
     name = []
     for i in links:
-        i = i[7:]
-        if (i[7:11] == 'link'):
+        j = i[7:11]
+        if (j == 'link'):
+            i=i[7: ]
             i = i.title()
             name.append(i)
+    print(name)
     for i in total:
         if(i not in name):
             name.append(i)
