@@ -83,6 +83,7 @@ def link4(request):
     client = gspread.authorize(creds)
     sht = client.open('Majorprojectnew').sheet1
     i=sht.cell(20,2).value
+
     dict={'l':i}
     return render(request, 'link4.html',{'dict':dict})
 def link5(request):
