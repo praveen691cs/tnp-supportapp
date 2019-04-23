@@ -5,6 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns=[
+    url(r'^api/json/', views.tnp_api_json, name='tnp_api_json'),
     url(r'^index$',views.index,name='index'),
     url(r'^pageviews$',views.page,name='page'),
     url(r'^averagetime$',views.average,name='average'),
