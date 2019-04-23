@@ -25,7 +25,7 @@ SECRET_KEY = 'pq%9w3-i0$$q1v00h(*#*&-k9d5u2it&z3&=(su1d1%_h=t8hk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tnp-cse.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -36,8 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp',
-    'rest_framework'
+    'myapp'
 ]
 
 MIDDLEWARE = [
@@ -124,6 +123,8 @@ USE_TZ = True
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
 MEDIA_URL="/"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
@@ -131,9 +132,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-# # The URL to use when referring to static files (where they will be served from)
-# STATIC_URL = '/static/'
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-#     #'/var/www/static/',
-# ]
+REGISTER_ENABLED = True
