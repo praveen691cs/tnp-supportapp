@@ -14,9 +14,10 @@ def tnp_api_json(request):
 
 
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    creds = ServiceAccountCredentials.from_json_keyfile_name('praveen.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name('TnP.json', scope)
     client = gspread.authorize(creds)
-    sht = client.open('TnP').sheet1
+    #sht = client.open('TnP').sheet1
+    sht = client.open_by_url('https://docs.google.com/spreadsheets/d/1Cnp2sMIWLg0cXPXqJlJmZPExveDCVsZyTa7gR3dG4X0/edit#gid=1704048332').worksheet('Views')
     links = []
     count = []
     for i in list(range(16,50)):

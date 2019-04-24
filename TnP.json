@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tnpnews",
+  "private_key_id": "0bdd15e4d5b0776ed326360715358b7351e1a3bf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1X7xk2Ydveq7y\nVjCvRFMRIJ5QdUDwy6+8lU3uK7P9ZhqbJqPgYOCspiHWq/s/mbj5nm+AFU3DN9xw\nzqMUyZZ8HbWI7jOHtVhRx1AIZxJSvneUF+AasUuL9QNkrjBGNF/Z2MRpe/v/K+dP\nHy9I6iv4LzjZJ0Kb3uiBWTTa2SN7AMTz/VBjxblEVMumtOmRy6+L6RjCKEfyKrG/\nz3nkcTT6MEex5MErgpaRiEXRe65TdR33S9caPbrm4fd3g65BUYt+9xCynBxLd/IP\nmUKj/bTP5Z/ly2TThM8O6P3c0fCpU/sBly97V7s7/MuylfD3bUn0TL3wUOLAVtqB\n1QUpfHcJAgMBAAECggEARWGgAbws0PpPXiiWaxVp6U1fAkw4UWS5jxxWOVvCeJbM\narl3SugESkcq/qG/dO7rEaIH6Sk9HAaMbyK8w8Dxrfz3arAkSi+W34GtHem/2qM9\nvwr7EXrs+Vb6u1Le6Jw0ZnNDf06McWpsC5pUTkI2G7SEvJ0GH/Y/XuuvCmCx7+UQ\nWvFBZ9+3kQLGNHoAo8yQNXhU37wN+nRKsfSHYsQAfM+iECSadoUNFh3SALIvqlAY\nCJpcdjqsJhN3mQgXcwQ9COfc2ngOab8VoRWstfPvOWfHw6/ugWc0DVXMhS0K8Kcz\nETumJmY52ChA4glP+XgpdLDiPtF9NU1PoyZrh+SdOQKBgQDjQKms7XKUI+FcqiIf\nN3frOUlGW8G2vL6xJeFF/uDJRIiRApstgh+MbV6IJjsA8vwTaVvkM3dnNAgSfzec\nXwigDEqTagil0SIODxzf5qAq32UX+IxFFGE3xgca9SLSj4dSGmnq+HX+aaWZbk5y\nz3G3C8BDSETbjfnC+Zy+vV4z6wKBgQDMUVeOX9PqphgmzLNAVmTMp6jN7T429H63\n5L9HHy7jlU3dXilDACCmKN8YIwKWlHOLQH1tXv4EH6r3Uy6N0ZUI97giArNFxX8h\nc9IU+TKZGZUgKfJAJN44X9bRk5ZdK2cJ6DDOnB7cT0lRkmo7XZdZgvZSLnPGl16d\nMdnk8Ofn2wKBgGQkiqD5whQl+5mqH39CIkY16GRo6uRsKFxIJQ2DU+tdmBDO5TMY\ntG5dg9rbfgTdDtg/BY96XpPMCgKcrRTrjBF7WSG9CDKKBkfLwR2ps8swxovZq3aF\nlJHPYjIu9Dl1plw355T0CIskYyVJxqgxYhsXwpHjtvRJjFavSLOFH44hAoGBAIFA\nmAYOYy5XAoJRDriNrti025niEnCLfTpyL/sbI/t+8TIwJiQniX/z7SYEx9dgdDPM\niUxOQp1zNyGc8p9uzTxOEaMaWDS0Ord74JO6DaNCxs8BGiov6JB7OJd+KSopkdZ3\nl6CsrO0sDzLWT/PcQimzKoZUspMYIReKeNBXAi3vAoGAbtGPBIOy4NTslVvIIaXY\nM0CKmxOXvnZYIOlFGC6ZKEnjVe2XlcO2QXVurpRVdnBO2X8CmE1PXDbA0KoUljUA\nGQVjovAwq/csCIBQUL3Ah3qW37kF8ncPwlG3iUVRoCg/9sBANSa5nNgypgzm503T\nFlWCUhpzght4gcCHFE3Rg0Y=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tnp-277@tnpnews.iam.gserviceaccount.com",
+  "client_id": "117405177183337071839",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tnp-277%40tnpnews.iam.gserviceaccount.com"
+}
