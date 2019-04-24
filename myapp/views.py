@@ -20,7 +20,7 @@ def tnp_api_json(request):
     sht = client.open_by_url('https://docs.google.com/spreadsheets/d/1Cnp2sMIWLg0cXPXqJlJmZPExveDCVsZyTa7gR3dG4X0/edit#gid=1704048332').worksheet('Views')
     links = []
     count = []
-    for i in list(range(16,50)):
+    for i in list(range(16,25)):
         l = sht.cell(i, 1).value
         if(l[6:] in links_tnp):
             links.append(l[6:])
